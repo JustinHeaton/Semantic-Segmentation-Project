@@ -1,10 +1,15 @@
 # Semantic Segmentation
-### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+### Overview
+In this project, we trained a Fully Convolutional Network (FCN) to identify road pixels from images. We started with the VGG16 network and added skip layers, 1x1 convolutions and upsampling to build the FCN.
+
+### Example Output:
+![Example 1](./examples/example1.png)
+![Example 2](./examples/example2.png)
+![Example 3](./examples/example3.png)
 
 ### Setup
 ##### Frameworks and Packages
-Make sure you have the following is installed:
+Make sure you have the following installed:
  - [Python 3](https://www.python.org/)
  - [TensorFlow](https://www.tensorflow.org/)
  - [NumPy](http://www.numpy.org/)
@@ -12,21 +17,9 @@ Make sure you have the following is installed:
 ##### Dataset
 Download the [Kitti Road dataset](http://www.cvlibs.net/datasets/kitti/eval_road.php) from [here](http://www.cvlibs.net/download.php?file=data_road.zip).  Extract the dataset in the `data` folder.  This will create the folder `data_road` with all the training a test images.
 
-### Start
-##### Implement
-Implement the code in the `main.py` module indicated by the "TODO" comments.
-The comments indicated with "OPTIONAL" tag are not required to complete.
 ##### Run
-Run the following command to run the project:
+Run the following command to train the FCN:
 ```
 python main.py
 ```
 
-### Submission
-1. Ensure you've passed all the unit tests.
-2. Ensure you pass all points on [the rubric](https://review.udacity.com/#!/rubrics/989/view).
-3. Submit the following in a zip file.
- - `helper.py`
- - `main.py`
- - `project_tests.py`
- - Newest inference images from `runs` folder
