@@ -18,7 +18,7 @@ Make sure you have the following installed:
 Download the [Kitti Road dataset](http://www.cvlibs.net/datasets/kitti/eval_road.php) from [here](http://www.cvlibs.net/download.php?file=data_road.zip).  Extract the dataset in the `data` folder.  This will create the folder `data_road` with all of the training and test images.
 
 ##### Run
-Run the following command to train the FCN:
+Run the following command to train the FCN and save inference samples:
 ```
 python main.py
 ```
